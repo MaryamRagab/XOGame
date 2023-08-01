@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">
+        <span style="color: rgb(8, 192, 173)">X</span
+        ><span style="color: rgb(0, 255, 136)">O</span>
+      </h1>
+      <div class="start-page">
+        <div class="players-data">
+          <div>
+            <label for="player1">Player1 Name:</label>
+            <input type="text" id="player1" placeholder="Player1" />
+          </div>
+          <div>
+            <label for="player2">Player2 Name:</label>
+            <input type="text" id="player2" placeholder="Player2" />
+          </div>
+          <div class="marker">
+            <label for="marker">Player1 Marker:</label>
+            <select id="marker">
+              <option value="X">X</option>
+              <option value="O">O</option>
+            </select>
+          </div>
+        </div>
+        <!-- <p style="color: red">REMEMBER: X Goes First!</p> -->
+        <button id="start">Start Game</button>
+      </div>
+
+      <div class="container hide">
+        <div class="board" id="board">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+        <button id="restart">Restart</button>
+      </div>
+
+      <div class="popup hide">
+        <p id="message">Message</p>
+        <button id="new-game">New Game</button>
+      </div>
+    </main>
+  </body>
+</html>
